@@ -1,0 +1,63 @@
+// main: styles.scss
+
+.order {
+    text-align: center;
+}
+
+.order__options,
+.order__current-order {
+    border-radius: $border-radius-lg;
+    padding: 20px;
+}
+
+.order__options {
+    background: $primary;
+}
+
+.order__current-order {
+    background: $secondary;
+    color: $white;
+    min-height: 130px;
+    text-align: left;
+}
+
+.order__heading {
+    color: $white;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.order__input {
+    margin-bottom: 20px;
+}
+
+.order__fname {
+    text-transform: capitalize;
+}
+
+.order__sidebar {
+    float: right;
+    margin-left: 0;
+    opacity: 0;
+    transition: opacity .5s, width 5s 3s;
+    width: 0;
+}
+
+.order__sidebar--show {
+    margin-left: 3%;
+    opacity: 1;
+    transition: opacity .5s .5s;
+    width: 27%;
+}
+
+.order__main-area {
+    float: left;
+    transition: width .5s .5s;
+    width: 100%;
+}
+
+.order__main-area--shrink {
+    transition: width .1s;
+    width: 70%;
+}
